@@ -811,8 +811,9 @@ service hcidump /system/bin/sh /system/etc/hcidump.sh
     disabled
     oneshot
 
-service charger /sbin/charger_v4xx
+service charger /sbin/healthd -c
     class charger
+    critical
 
 # Mobile DM Router
 service lg_dm_router /system/bin/lg_dm_router
