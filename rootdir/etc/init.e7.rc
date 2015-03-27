@@ -103,14 +103,6 @@ service thermal-engine /system/bin/thermal-engine
    user root
    group root
 
-on property:sys.boot_completed=1
-    # Set up KSM
-    write /sys/kernel/mm/ksm/deferred_timer 1
-    write /sys/kernel/mm/ksm/pages_to_scan 100
-    write /sys/kernel/mm/ksm/sleep_millisecs 500
-    write /sys/kernel/mm/ksm/run 1
-
-
 service audiod /system/bin/audiod
     class late_start
     user system
