@@ -58,7 +58,6 @@ BOARD_HAVE_BLUETOOTH := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-COMMON_GLOBAL_CFLAGS += -DLG_CAMERA_HARDWARE
 COMMON_GLOBAL_CFLAGS += -DPROPERTY_PERMS_APPEND=' \
     { "persist.data.sensor_name", AID_CAMERA, 0 }, \
     { "camera.4k2k.enable", AID_MEDIA, 0 }, \
