@@ -7,6 +7,7 @@ common_includes += device/lge/v4xx-common/display/libhwcomposer
 common_includes += device/lge/v4xx-common/display/libexternal
 common_includes += device/lge/v4xx-common/display/libqservice
 common_includes += device/lge/v4xx-common/display/libvirtual
+common_includes += device/lge/v4xx-common/display/libhdmi
 
 ifeq ($(TARGET_USES_POST_PROCESSING),true)
     common_flags     += -DUSES_POST_PROCESSING
