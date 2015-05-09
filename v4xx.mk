@@ -224,5 +224,6 @@ PRODUCT_COPY_FILES += \
     device/lge/v4xx-common/wcnss/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     device/lge/v4xx-common/wcnss/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
-# CAF display HAL
+# CAF HALs
 $(call project-set-path,qcom-display,device/lge/v4xx-common/display)
+$(call project-set-path,qcom-media,device/lge/v4xx-common/media)
