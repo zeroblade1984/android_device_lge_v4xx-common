@@ -1100,7 +1100,6 @@ on property:service.bootanim.exit=1
     chmod 664 /sys/devices/system/cpu/cpu3/online
 
     write /sys/kernel/cpu_input_boost/boost_freqs "787200 998400 1094400"
-    write /sys/kernel/cpu_input_boost/up_threshold 60
     write /sys/kernel/cpu_input_boost/enabled 1
 
 # CM Performance Profiles
