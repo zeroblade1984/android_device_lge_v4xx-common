@@ -172,7 +172,7 @@ vendor/lib/libmm-abl.so
 
 # Perf
 bin/mpdecision
-vendor/lib/libqc-opt.so
+vendor/lib/libqti-perfd-client.so
 
 # Sensors
 bin/irsc_util
