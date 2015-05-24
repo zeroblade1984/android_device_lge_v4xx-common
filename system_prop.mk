@@ -62,8 +62,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true \
     ro.qualcomm.cabl=0 \
-    ro.qualcomm.perf.cores_online=2 \
-    ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
+    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
 # Recovery
 PRODUCT_PROPERTY_OVERRIDES += \
