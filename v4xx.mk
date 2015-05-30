@@ -222,8 +222,3 @@ PRODUCT_COPY_FILES += \
     device/lge/v4xx-common/wcnss/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     device/lge/v4xx-common/wcnss/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     device/lge/v4xx-common/wcnss/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
-
-# CAF HALs
-$(call project-set-path,qcom-audio,device/lge/v4xx-common/audio)
-$(call project-set-path,qcom-display,device/lge/v4xx-common/display)
-$(call project-set-path,qcom-media,device/lge/v4xx-common/media)
