@@ -1107,7 +1107,7 @@ on property:sys.perf.profile=0
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor conservative
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor conservative
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor conservative
-    write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
+    write /sys/class/kgsl/kgsl-3d0/devfreq/governor powersave
     start mpdecision
 
 on property:sys.perf.profile=1
