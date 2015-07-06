@@ -1,5 +1,6 @@
 #!/bin/bash
 
+VENDOR=lge
 if [ -s ../../$VENDOR/$DEVICE/proprietary-files.txt ]; then
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
