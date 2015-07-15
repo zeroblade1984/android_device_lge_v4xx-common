@@ -1055,8 +1055,8 @@ on property:persist.service.dsqn=0
 
 # Performance
 on property:sys.boot_completed=1
-    # Switch to ROW and balanced mode after boot for better UX
-    write /sys/block/mmcblk0/queue/scheduler row
+    # Switch to Deadline and balanced mode after boot for better UX
+    write /sys/block/mmcblk0/queue/scheduler deadline
 
     write /sys/module/lpm_levels/enable_low_power/l2 4
     write /sys/module/msm_pm/modes/cpu0/power_collapse/suspend_enabled 1
