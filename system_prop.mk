@@ -32,7 +32,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     persist.hwc.mdpcomp.enable=true \
     ro.opengles.version=196608 \
-    ro.sf.lcd_density=213
+    ro.sf.lcd_density=213 \
+    persist.sys.strictmode.disable=true
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
