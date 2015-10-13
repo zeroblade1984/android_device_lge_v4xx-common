@@ -1091,8 +1091,14 @@ on property:sys.boot_completed=1
     chmod 664 /sys/devices/system/cpu/cpu2/online
     chmod 664 /sys/devices/system/cpu/cpu3/online
 
-    write /sys/kernel/cpu_input_boost/boost_freqs "787200 998400 1094400"
+    write /sys/kernel/cpu_input_boost/ib_freqs "1094400 998400 787200"
+    write /sys/kernel/cpu_input_boost/load_based_syncs 1
+    write /sys/kernel/cpu_input_boost/migration_boost_ms 20
+    write /sys/kernel/cpu_input_boost/migration_load_threshold 25
+    write /sys/kernel/cpu_input_boost/sync_threshold 1190400
     write /sys/kernel/cpu_input_boost/enabled 1
+    write /dev/cpuctl/cpu.notify_on_migrate 1
+
     setprop sys.perf.profile 1
 
 # CM Performance Profiles
